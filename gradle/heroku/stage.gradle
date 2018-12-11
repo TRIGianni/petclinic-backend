@@ -1,0 +1,11 @@
+task stage(dependsOn: ['build','clean', 'shadowJar'])
+build.mustRunAfter clean
+
+/*  task copyToLib(type: Copy) {
+  from "$buildDir/libs"
+  into "$rootProject.buildDir/libs"
+  println "$buildDir"
+  println "$rootProject.buildDir"
+}
+copyToLib.dependsOn(shadowJar)
+stage.dependsOn(copyToLib) */
