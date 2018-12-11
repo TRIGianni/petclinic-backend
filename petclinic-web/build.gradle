@@ -62,9 +62,9 @@ sourceSets {
   }  
 	}
 
-// task copyToLib(type: Copy) {
-//     from "$buildDir/libs"
-//     into("$rootProject.buildDir/libs")
-// }
+task copyToLib(type: Copy) {
+    from "$buildDir/libs"
+    into("$rootProject.buildDir/libs")
+}
 
-// stage.dependsOn(copyToLib)
+stage.dependsOn(copyToLib)
